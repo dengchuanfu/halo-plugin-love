@@ -35,7 +35,7 @@ public class LovePageRouter {
     private Mono<ServerResponse> renderLovePage(ServerRequest request) {
         return settingFetcher.fetch(CoupleSetting.GROUP, CoupleSetting.class)
             .defaultIfEmpty(new CoupleSetting(
-                null, null, null, null, null, null, null, null, null, null, null, null
+                null, null, null, null, null, null, null, null, null, null, null, null, null, null
             ))
             .flatMap(couple -> {
                 var model = new HashMap<String, Object>();
@@ -46,6 +46,8 @@ public class LovePageRouter {
                 model.put("rightAvatar", avatarOrDefault(
                     couple.right_qq(), couple.right_avatar_url(), couple.right_avatar()
                 ));
+                model.put("leftProfileUrl", couple.left_profile_url());
+                model.put("rightProfileUrl", couple.right_profile_url());
                 model.put("coverImage", imageOrDefault(couple.cover_image(), "default-cover.webp"));
                 model.put(ModelConst.TEMPLATE_ID, "plugin:love-page:love");
                 return templateNameResolver.resolveTemplateNameOrDefault(request.exchange(), "love")

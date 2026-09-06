@@ -32,6 +32,12 @@ spec:
           help: 可填写图片的完整 URL；未填写 QQ 号时使用。
           validation: url|length:0,500
           value: ""
+        - $formkit: url
+          name: left_profile_url
+          label: 左侧头像点击跳转链接
+          help: 点击左侧头像后打开此链接，留空则头像不可点击。
+          validation: url|length:0,500
+          value: ""
         - $formkit: text
           name: right_name
           label: 右侧名字
@@ -55,6 +61,12 @@ spec:
           name: right_avatar_url
           label: 右侧头像链接
           help: 可填写图片的完整 URL；未填写 QQ 号时使用。
+          validation: url|length:0,500
+          value: ""
+        - $formkit: url
+          name: right_profile_url
+          label: 右侧头像点击跳转链接
+          help: 点击右侧头像后打开此链接，留空则头像不可点击。
           validation: url|length:0,500
           value: ""
         - $formkit: date
