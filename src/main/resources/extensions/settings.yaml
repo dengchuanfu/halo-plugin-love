@@ -72,7 +72,8 @@ spec:
         - $formkit: date
           name: started_at
           label: 相恋日期
-          value: "2020-01-01"
+          help: 默认日期为 2025-04-04，按 2026-09-06 计算为相恋 520 天。
+          value: "2025-04-04"
           validation: required
         - $formkit: text
           name: headline

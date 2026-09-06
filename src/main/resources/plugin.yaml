@@ -1,7 +1,7 @@
 apiVersion: plugin.halo.run/v1alpha1
 kind: Plugin
 metadata:
-  name: love-page
+  name: PluginLove
 spec:
   enabled: true
   requires: ">=2.23.0"
