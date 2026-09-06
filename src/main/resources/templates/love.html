@@ -70,6 +70,7 @@
       .timer { display: flex; justify-content: center; align-items: baseline; flex-wrap: wrap; gap: 0 16px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: clamp(28px, 4vw, 48px); font-weight: 700; font-variant-numeric: tabular-nums; }
       .timer b { font-size: clamp(40px, 6vw, 68px); }
       .timer small { margin-left: 4px; font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: .56em; font-weight: 400; }
+      .message { width: min(100%, 680px); margin: clamp(12px, 2.2vh, 22px) auto 0; color: #8a8f98; font-size: clamp(14px, 1.6vw, 18px); line-height: 1.75; white-space: pre-line; }
       @keyframes gradient-shift { to { background-position: -300% 0; } }
 
       @media (max-width: 700px) {
@@ -83,6 +84,7 @@
         .love-icon svg { width: 21px; height: 21px; }
         .time { height: 44svh; padding: 18px 12px 8px; }
         .timer { gap: 2px 8px; }
+        .message { margin-top: 12px; font-size: 14px; }
       }
     </style>
   </head>
@@ -124,6 +126,7 @@
           <span><b data-unit="minutes">0</b><small>分</small></span>
           <span><b data-unit="seconds">0</b><small>秒</small></span>
         </div>
+        <p class="message" th:text="${couple.message()}">愿每一个平常的日子，都有彼此相伴。</p>
       </section>
     </main>
     <script>
