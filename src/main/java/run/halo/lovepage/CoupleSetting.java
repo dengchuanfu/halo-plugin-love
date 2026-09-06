@@ -3,8 +3,12 @@ package run.halo.lovepage;
 public record CoupleSetting(
     String left_name,
     String left_avatar,
+    String left_qq,
+    String left_avatar_url,
     String right_name,
     String right_avatar,
+    String right_qq,
+    String right_avatar_url,
     String started_at,
     String headline,
     String message,

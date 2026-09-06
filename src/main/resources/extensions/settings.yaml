@@ -14,11 +14,23 @@ spec:
           validation: required|length:1,40
         - $formkit: attachment
           name: left_avatar
-          label: 左侧头像
+          label: 左侧头像（上传）
           accepts:
             - "image/png"
             - "image/jpeg"
             - "image/webp"
+          value: ""
+        - $formkit: text
+          name: left_qq
+          label: 左侧 QQ 号
+          help: 填写后自动获取 QQ 头像，优先级高于头像链接和上传头像。
+          validation: length:0,20
+          value: ""
+        - $formkit: url
+          name: left_avatar_url
+          label: 左侧头像链接
+          help: 可填写图片的完整 URL；未填写 QQ 号时使用。
+          validation: url|length:0,500
           value: ""
         - $formkit: text
           name: right_name
@@ -27,11 +39,23 @@ spec:
           validation: required|length:1,40
         - $formkit: attachment
           name: right_avatar
-          label: 右侧头像
+          label: 右侧头像（上传）
           accepts:
             - "image/png"
             - "image/jpeg"
             - "image/webp"
+          value: ""
+        - $formkit: text
+          name: right_qq
+          label: 右侧 QQ 号
+          help: 填写后自动获取 QQ 头像，优先级高于头像链接和上传头像。
+          validation: length:0,20
+          value: ""
+        - $formkit: url
+          name: right_avatar_url
+          label: 右侧头像链接
+          help: 可填写图片的完整 URL；未填写 QQ 号时使用。
+          validation: url|length:0,500
           value: ""
         - $formkit: date
           name: started_at
