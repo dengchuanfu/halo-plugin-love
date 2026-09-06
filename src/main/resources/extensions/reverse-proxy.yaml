@@ -1,0 +1,8 @@
+apiVersion: plugin.halo.run/v1alpha1
+kind: ReverseProxy
+metadata:
+  name: love-page-assets
+rules:
+  - path: /images/**
+    file:
+      directory: static/images

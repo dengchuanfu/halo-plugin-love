@@ -1,0 +1,17 @@
+apiVersion: plugin.halo.run/v1alpha1
+kind: Plugin
+metadata:
+  name: love-page
+spec:
+  enabled: true
+  requires: ">=2.23.0"
+  author:
+    name: Monster
+  logo: logo.png
+  homepage: https://github.com/Monster/halo-plugin-love
+  displayName: "情侣主页"
+  description: "提供 /love 情侣展示页，情侣资料在插件设置中维护。"
+  settingName: love-page-settings
+  configMapName: love-page-config
+  license:
+    - name: "MIT"

@@ -1,0 +1,61 @@
+apiVersion: v1alpha1
+kind: Setting
+metadata:
+  name: love-page-settings
+spec:
+  forms:
+    - group: couple
+      label: 情侣信息
+      formSchema:
+        - $formkit: text
+          name: left_name
+          label: 左侧名字
+          value: "我们"
+          validation: required|length:1,40
+        - $formkit: attachment
+          name: left_avatar
+          label: 左侧头像
+          accepts:
+            - "image/png"
+            - "image/jpeg"
+            - "image/webp"
+          value: ""
+        - $formkit: text
+          name: right_name
+          label: 右侧名字
+          value: "彼此"
+          validation: required|length:1,40
+        - $formkit: attachment
+          name: right_avatar
+          label: 右侧头像
+          accepts:
+            - "image/png"
+            - "image/jpeg"
+            - "image/webp"
+          value: ""
+        - $formkit: date
+          name: started_at
+          label: 相恋日期
+          value: "2020-01-01"
+          validation: required
+        - $formkit: text
+          name: headline
+          label: 页面标题
+          value: "我们在一起"
+          validation: required|length:1,80
+        - $formkit: textarea
+          name: message
+          label: 纪念文案
+          value: "愿每一个平常的日子，都有彼此相伴。"
+          validation: length:0,300
+        - $formkit: attachment
+          name: cover_image
+          label: 页面壁纸（自定义）
+          help: 上传后将作为情侣主页的整页背景显示，留空使用默认壁纸。
+          width: 10rem
+          aspectRatio: 16/9
+          accepts:
+            - "image/png"
+            - "image/jpeg"
+            - "image/webp"
+          value: ""
