@@ -8,7 +8,7 @@ spec:
   author:
     name: Monster
   logo: logo.png
-  homepage: https://github.com/Monster/halo-plugin-love
+  homepage: https://github.com/dengchuanfu/halo-plugin-love
   displayName: "情侣主页"
   description: "提供 /love 情侣展示页，情侣资料在插件设置中维护。"
   settingName: love-page-settings

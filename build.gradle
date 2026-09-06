@@ -42,7 +42,7 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 tasks.named('generatePluginComponentsIdx') {
-    notCompatibleWithConfigurationCache('This task invokes Task.project at execution time.')
+    notCompatibleWithConfigurationCache('该任务会在执行期间调用 Task.project。')
 }
 
 halo {
