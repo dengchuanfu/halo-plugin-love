@@ -74,7 +74,6 @@ spec:
           label: 相恋日期
           help: 留空时，插件会按当前服务器日期自动回推 520 天作为默认相恋日期。
           value: ""
-          validation: required
         - $formkit: text
           name: headline
           label: 页面标题
