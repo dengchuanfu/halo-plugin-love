@@ -5,7 +5,7 @@
 ## 功能
 
 - 提供自适应全屏的情侣主页，桌面端与移动端均可完整展示。
-- 页面包含自定义壁纸、情侣头像与昵称、GitHub 风格动态爱心、波浪过渡和相恋时长计时器。
+- 页面包含自定义壁纸、情侣头像与昵称、动态爱心、波浪过渡和相恋时长计时器。
 - 后台可配置两人的名字、头像、相恋日期、页面标题、纪念文案及自定义壁纸。
 - 未上传头像或壁纸时，自动使用插件内置的默认资源。
 - 配置保存在 Halo 插件的 ConfigMap 中；不使用独立数据库、SQL 迁移或第三方服务。
@@ -15,6 +15,12 @@
 1. 在 Halo 后台的“插件”页面上传并启用插件。
 2. 打开插件详情页的“设置”，填写情侣资料并保存。
 3. 访问 `https://你的域名/love` 查看页面效果。
+
+## 插件信息
+
+- 作者：Monster
+- 仓库：[halo-plugin-love](https://github.com/dengchuanfu/halo-plugin-love)
+- 问题反馈：[GitHub Issues](https://github.com/dengchuanfu/halo-plugin-love/issues)
 
 ## 本地开发
 

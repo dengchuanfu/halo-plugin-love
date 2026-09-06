@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">情侣主页</title>
+  <defs>
+    <linearGradient id="background" x1="18" y1="14" x2="112" y2="118" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff76a6"/>
+      <stop offset=".48" stop-color="#ec5e9e"/>
+      <stop offset="1" stop-color="#7558c8"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="35" y1="25" x2="90" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#background)"/>
+  <rect x="1" y="1" width="126" height="126" rx="23" fill="url(#shine)" stroke="#fff" stroke-opacity=".15" stroke-width="2"/>
+  <path d="M64 98 29.8 66.2C13.4 51 15.3 26 36.6 22.7c11.4-1.8 22.3 4.1 27.4 13.6 5.1-9.5 16-15.4 27.4-13.6C112.7 26 114.6 51 98.2 66.2L64 98Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="9"/>
+  <path d="m44.5 56.8 11.4 11.4 28-28" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  <circle cx="98" cy="29" r="5" fill="#fff" fill-opacity=".92"/>
+  <path d="M106 39v10M101 44h10" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+</svg>

@@ -7,10 +7,13 @@ spec:
   requires: ">=2.23.0"
   author:
     name: Monster
-  logo: logo.png
+    website: https://github.com/dengchuanfu
+  logo: logo.svg
   homepage: https://github.com/dengchuanfu/halo-plugin-love
+  repo: https://github.com/dengchuanfu/halo-plugin-love
+  issues: https://github.com/dengchuanfu/halo-plugin-love/issues
   displayName: "情侣主页"
-  description: "提供 /love 情侣展示页，情侣资料在插件设置中维护。"
+  description: "为 Halo 提供全屏情侣纪念主页，支持自定义壁纸、头像、昵称与相恋时长计时。"
   settingName: love-page-settings
   configMapName: love-page-config
   license:
