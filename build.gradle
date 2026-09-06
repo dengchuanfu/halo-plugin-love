@@ -7,6 +7,10 @@ plugins {
 group = 'run.halo.lovepage'
 version = '1.0.0'
 
+tasks.named('jar') {
+    archiveBaseName = 'halo-plugin-love'
+}
+
 repositories {
     maven {
         name = 'Central Portal Snapshots'
