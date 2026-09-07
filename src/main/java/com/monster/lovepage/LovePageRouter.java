@@ -1,4 +1,4 @@
-package run.halo.lovepage;
+package com.monster.lovepage;
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.GET;
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;

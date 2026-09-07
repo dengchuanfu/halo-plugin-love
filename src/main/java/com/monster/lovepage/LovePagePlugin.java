@@ -1,4 +1,4 @@
-package run.halo.lovepage;
+package com.monster.lovepage;
 
 import org.springframework.stereotype.Component;
 import run.halo.app.plugin.BasePlugin;

@@ -1,3 +1,11 @@
+# v1.0.1
+
+## 变更内容
+
+- 将插件业务 Java 包名迁移至 `com.monster.lovepage`，避免与 Halo 官方包名产生归属混淆。
+- 同步更新 Gradle Maven 坐标为 `com.monster.lovepage`。
+- 保留插件 ID、配置名称和资源路径，确保已有安装配置兼容。
+
 # v1.0.0
 
 首个正式版本，提供全屏情侣纪念主页。
