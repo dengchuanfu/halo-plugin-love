@@ -19,8 +19,9 @@ public record CoupleSetting(
     String cover_image
 ) {
     public static final String GROUP = "couple";
-    public static final String DEFAULT_LEFT_AVATAR = "https://yyby.top/upload/logo.jpg";
-    public static final String DEFAULT_RIGHT_AVATAR = "https://img.ffbf.top/halo/logo.png";
+    /** 插件内置默认头像，避免未配置时请求外部站点。 */
+    public static final String DEFAULT_LEFT_AVATAR = "/plugins/PluginLove/assets/images/default-avatar.png";
+    public static final String DEFAULT_RIGHT_AVATAR = "/plugins/PluginLove/assets/images/default-avatar.png";
     private static final long DEFAULT_LOVE_DAYS = 520;
 
     public CoupleSetting {

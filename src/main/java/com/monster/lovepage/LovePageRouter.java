@@ -18,6 +18,7 @@ import run.halo.app.theme.router.ModelConst;
 public class LovePageRouter {
 
     private static final String PLUGIN_ASSET_PREFIX = "/plugins/PluginLove/assets/images/";
+    private static final String DEFAULT_COVER = PLUGIN_ASSET_PREFIX + "default-cover.webp";
 
     private final TemplateNameResolver templateNameResolver;
     private final ReactiveSettingFetcher settingFetcher;
@@ -50,7 +51,7 @@ public class LovePageRouter {
                 ));
                 model.put("leftProfileUrl", couple.left_profile_url());
                 model.put("rightProfileUrl", couple.right_profile_url());
-                model.put("coverImage", imageOrDefault(couple.cover_image(), "default-cover.webp"));
+                model.put("coverImage", imageOrDefault(couple.cover_image(), DEFAULT_COVER));
                 model.put(ModelConst.TEMPLATE_ID, "plugin:PluginLove:love");
                 return templateNameResolver.resolveTemplateNameOrDefault(request.exchange(), "love")
                     .flatMap(templateName -> ServerResponse.ok().render(templateName, model));
@@ -59,7 +60,7 @@ public class LovePageRouter {
 
     private String imageOrDefault(String configuredImage, String defaultImage) {
         return configuredImage == null || configuredImage.isBlank()
-            ? PLUGIN_ASSET_PREFIX + defaultImage
+            ? defaultImage
             : configuredImage;
     }
 
